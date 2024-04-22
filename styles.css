@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #1877f2;
+  padding: 20px 50px;
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  flex-direction: row;
+}
+
+form > h1 {
+  color: #073980;
+}
+
+.your-notes-div > h1 {
+  color: #7cb9e8;
+  padding-bottom: 20px;
+}
+
+form {
+  background-color: #7cb9e8;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 0px 0px 20px;
+  padding: 30px;
+  gap: 20px;
+  height: fit-content;
+}
+
+input,
+textarea {
+  outline: none;
+  padding: 10px;
+  background: #ffffff99;
+  border: 1px solid grey;
+}
+
+input[type="file"] {
+  border: none;
+  background: none;
+  padding: 5px;
+}
+
+textarea {
+  min-width: 200px;
+  max-width: 400px;
+  max-height: 200px;
+}
+
+form > button {
+  padding: 10px;
+  background-color: #0000ff;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.your-notes-div {
+  background-color: #073980;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  height: 100%;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.your-notes {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  overflow: auto;
+  height: max-content;
+  gap: 30px;
+}
+
+.notes {
+  background-color: lightgray;
+  min-width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  border: 5px;
+  border-radius: 10px;
+}
+
+.notes-desc {
+  overflow: auto;
+  flex: 1;
+}
+
+#pdf-view {
+  position: absolute;
+  z-index: 1;
+  border-radius: 5px;
+  height: 93.5%;
+  width: 92.5%;
+}
+#pdf-container {
+  background-color: gray;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+#close-pdf-view {
+  cursor: pointer;
+  font-size: x-large;
+  position: absolute;
+  right: -33px;
+  top: 0px;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}

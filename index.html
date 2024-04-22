@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes-Saver</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form>
+      <h1>Save Notes</h1>
+      <input type="text" name="title" id="title" placeholder="Title" required />
+      <textarea
+        name="description"
+        id="description"
+        rows="3"
+        placeholder="Description (optional)"
+      ></textarea>
+      <input
+        type="file"
+        name="pdf-notes"
+        id="pdf-notes"
+        accept=".pdf"
+        required
+      />
+      <button>Save</button>
+    </form>
+
+    <div class="your-notes-div">
+      <h1>Your Notes</h1>
+      <div class="your-notes" id="your-notes"></div>
+    </div>
+
+    <div class="hide" id="pdf-view">
+      <div id="pdf-container"></div>
+      <button id="close-pdf-view">&#10005;</button>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
